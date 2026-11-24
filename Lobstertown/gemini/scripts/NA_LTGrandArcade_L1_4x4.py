@@ -1,0 +1,10 @@
+"""Lobstertown GrandArcade, lot 4x4. Built from lt_designs/boardwalk.py."""
+from lt_designs.boardwalk import build as design
+
+ZONE = "ZC2"
+HOUSEHOLDS = 0
+PARTY_WALLS = ('left', 'right')
+
+
+def build(lod):
+    design(lod, W=4, D=4, **{'storeys': 5, 'promenade': True, 'roofs': 'gmg', 'turret': 'both', 'lantern': False, 'base': 'Greystone', 'wall': 'ShingleSilver', 'gable_mat': 'ShingleGrey', 'roof_mat': 'TinOxide', 'door': 'Green', 'sign': 'GrandArcade', 'towers': (('c', 2, 'hipl'),), 'spire': (1, 1)})

@@ -1,0 +1,1018 @@
+{
+  "_about": "Service buildings for newfrance_setup.py. Key = imported building name (services have no _L1_WxD in the name; their lot is given here). kind = fire/police/hospital/school/post/landmark (templates from the Chicago Region Pack; landmark = its unique library park). Points are GPT lot metres (front-left origin, +Y to the rear). values = our numbers over the template's, per component. Remove an entry and re-run the setup to drop the service wiring. name/description = the menu name and tooltip written beside the prefab as <key>_en-US.loc; a picture at NewFrance/thumbnails/<key>.png becomes the asset-bar icon. kind park = a repeatable park monument (landmark without the one-per-city rule); drop = template components to leave out. unlock = the vanilla development-tree node that unlocks it (monuments use the first Parks node).",
+  "NA_PdDCaserneArcCanal": {
+    "lot": [
+      5,
+      5
+    ],
+    "kind": "fire",
+    "vehicle_points_lot_m": [
+      [
+        8.75,
+        9.9
+      ],
+      [
+        18,
+        9.9
+      ],
+      [
+        27.35,
+        9.9
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      2.35,
+      1.5
+    ],
+    "name": "Caserne de l’Arc-du-Canal",
+    "description": "Fire station. Three engine bays under limestone arches, with a brick hose tower that doubles as the quarter’s lookout. Paris on the Delaware."
+  },
+  "NA_PdDHotelDeVilleDeuxRives": {
+    "lot": [
+      8,
+      7
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      28,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 50
+      }
+    },
+    "name": "Hôtel de Ville des Deux-Rives",
+    "description": "City hall and landmark. A brick and limestone town hall with a tall clock campanile over the square. One per city; raises attractiveness and gives residents somewhere to linger. Paris on the Delaware."
+  },
+  "NA_PdDCommissariatQuais": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "police",
+    "vehicle_points_lot_m": [
+      [
+        31.4,
+        10.8
+      ],
+      [
+        40.2,
+        10.8
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      17.4,
+      1.5
+    ],
+    "name": "Commissariat des Quais",
+    "description": "Police station. A turreted brick commissariat with a clock tower and two patrol-car bays facing the quay. Paris on the Delaware."
+  },
+  "NA_PdDCliniqueTuiles": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "hospital",
+    "vehicle_points_lot_m": [
+      [
+        43.65,
+        10.8
+      ],
+      [
+        51.12,
+        10.8
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      26.7,
+      1.5
+    ],
+    "values": {
+      "Hospital": {
+        "m_PatientCapacity": 150,
+        "m_AmbulanceCapacity": 10,
+        "m_TreatmentBonus": 20
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 60000,
+        "m_ElectricityConsumption": 3000,
+        "m_WaterConsumption": 1500,
+        "m_GarbageAccumulation": 20
+      }
+    },
+    "_note": "clinic: the Chicago hospital template scaled down (500 patients/30 ambulances -> 150/10)",
+    "name": "Clinique des Tuiles",
+    "description": "Neighbourhood clinic. Steep patterned-tile roofs over a brick and stone dispensary, with ambulance bays at the side. A smaller companion to the Hôpital des Invalides. Paris on the Delaware."
+  },
+  "NA_PdDLyceeOrmes": {
+    "lot": [
+      10,
+      8
+    ],
+    "kind": "school",
+    "pedestrian_point_lot_m": [
+      40,
+      1.5
+    ],
+    "name": "Lycée des Ormes",
+    "description": "High school. A domed central pavilion between two brick classroom wings, set back behind its forecourt. Paris on the Delaware."
+  },
+  "NA_PdDHotelPostesBassin": {
+    "lot": [
+      6,
+      6
+    ],
+    "kind": "post",
+    "vehicle_points_lot_m": [
+      [
+        32,
+        10.95
+      ],
+      [
+        41,
+        10.95
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      13.3,
+      1.5
+    ],
+    "name": "Hôtel des Postes du Bassin",
+    "description": "Post office. A mansard-roofed postal hall with a clock over the door and van bays for the sorting room. Paris on the Delaware."
+  },
+  "NA_PdDHopitalInvalides": {
+    "lot": [
+      8,
+      8
+    ],
+    "kind": "hospital",
+    "vehicle_points_lot_m": [
+      [
+        8.7,
+        9.6
+      ],
+      [
+        15.95,
+        9.6
+      ],
+      [
+        52,
+        9.6
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      32,
+      1.5
+    ],
+    "name": "Hôpital des Invalides",
+    "description": "Hospital. Brick ward wings gathered around a gilded dome, with a covered ambulance entrance. The district’s main hospital. Paris on the Delaware."
+  },
+  "NA_PdDFacultePantheon": {
+    "lot": [
+      9,
+      8
+    ],
+    "kind": "school",
+    "pedestrian_point_lot_m": [
+      36,
+      1.5
+    ],
+    "values": {
+      "School": {
+        "m_Level": 4,
+        "m_StudentCapacity": 2000
+      }
+    },
+    "_note": "university: high-school template at level 4",
+    "name": "Faculté du Panthéon",
+    "description": "College. A limestone portico and drum dome between two brick lecture wings. Paris on the Delaware."
+  },
+  "NA_PdDBibliothequeGenevieve": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      24,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 30
+      }
+    },
+    "name": "Bibliothèque Geneviève",
+    "description": "Public library and landmark. A long reading room carried on a stone arcade, lit by a row of arched windows. One per city; raises attractiveness and offers quiet leisure. Paris on the Delaware."
+  },
+  "NA_PdDEcoleRuelle": {
+    "lot": [
+      8,
+      6
+    ],
+    "kind": "elementary",
+    "pedestrian_point_lot_m": [
+      16.4,
+      1.5
+    ],
+    "name": "École de la Ruelle",
+    "description": "Elementary school. A two-storey brick schoolhouse with a bell lantern and clock over the entrance. Paris on the Delaware."
+  },
+  "NA_PdDEcoleQuai": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "elementary",
+    "pedestrian_point_lot_m": [
+      27,
+      1.5
+    ],
+    "name": "École du Quai",
+    "description": "Elementary school. A low brick schoolhouse with a corner stair turret and a gabled entrance. Paris on the Delaware."
+  },
+  "NA_PdDColonneEcluse": {
+    "lot": [
+      2,
+      2
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      8,
+      1.5
+    ],
+    "name": "Colonne de l’Écluse",
+    "description": "Park monument. A limestone column banded in bronze and crowned by a verdigris lantern, raised to mark the opening of the canal lock in 1834. Stands on a gravel rond-point with clipped hedges. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 8
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 3000,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 60000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 600
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDKiosqueMariniers": {
+    "lot": [
+      2,
+      2
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      8,
+      1.5
+    ],
+    "name": "Kiosque des Mariniers",
+    "description": "Park bandstand. An octagonal iron kiosk with a zinc roof and gilded finial, where the boatmen’s band plays on Sunday afternoons. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 10
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 3500,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 70000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 700
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDSquareColonneMorris": {
+    "lot": [
+      1,
+      1
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      4,
+      1.0
+    ],
+    "name": "Square de la Colonne Morris",
+    "description": "Pocket square. A green advertising column pasted with theatre posters beside a cast-iron drinking fountain, on a single paved cell. Fits the gaps a city leaves over. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 4
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 1200,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 20000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 300
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDArcDeuxRives": {
+    "lot": [
+      3,
+      2
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      12,
+      1.5
+    ],
+    "name": "Arc des Deux-Rives",
+    "description": "Park monument. A triumphal arch in pale limestone, inscribed AUX BATELIERS DES DEUX RIVES, to the boatmen of both banks. Paved through the arch so a promenade can pass under it. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 15
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 6000,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 150000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 1000
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDFontaineGrotte": {
+    "lot": [
+      2,
+      3
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      8,
+      1.5
+    ],
+    "name": "Fontaine de la Grotte",
+    "description": "Park fountain. A rusticated grotto wall with a pediment, bronze urns in its niches and a long basin with two jets, in the manner of a Paris garden fountain. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 15
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 5500,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 140000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 1000
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDUsineEauxClaires": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      24,
+      1.5
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (water_pump), wired as a placeable monument until a water_pump template is found; GPT's connection point None",
+    "description": "Waterworks (decorative for now). A limestone temple fronts the river pumping works, with brick engine rooms and intake grilles on the quay side. Paris on the Delaware.",
+    "name": "Usine des Eaux Claires"
+  },
+  "NA_PdDChateauEauOrmes": {
+    "lot": [
+      5,
+      5
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      20,
+      1.5
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (water_tower), wired as a placeable monument until a water_tower template is found; GPT's connection point [20, 1.5]",
+    "description": "Water tower (decorative for now). Eight brick piers carry a broad corbelled water tank beneath a low slate roof and lantern. Paris on the Delaware.",
+    "name": "Château d’eau des Ormes"
+  },
+  "NA_PdDCentraleSoleil": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      28,
+      1.5
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (power), wired as a placeable monument until a power template is found; GPT's connection point [49, 42]",
+    "description": "Generating station (decorative for now). A brick generating station marks the quay with a stained-glass sunburst, a roof monitor, and two chimney stacks. Paris on the Delaware.",
+    "name": "Centrale du Soleil"
+  },
+  "NA_PdDTourDesOndes": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      28,
+      1.5
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (telecom), wired as a placeable monument until a telecom template is found; GPT's connection point [28, 1.5]",
+    "description": "Radio tower (decorative for now). Four brick piers carry an open iron lattice and an antenna above the city’s broadcast offices. Paris on the Delaware.",
+    "name": "Tour des Ondes"
+  },
+  "NA_PdDOperaDesDeuxFleuves": {
+    "lot": [
+      9,
+      8
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      36,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 40
+      }
+    },
+    "description": "Landmark. A grand staircase and limestone loggia lead into the river city's opera house beneath a green copper dome. One per city; raises attractiveness. Paris on the Delaware.",
+    "name": "Opéra des Deux-Fleuves"
+  },
+  "NA_PdDNotreDameDelaware": {
+    "lot": [
+      10,
+      11
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      40,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 45
+      }
+    },
+    "description": "Landmark. Twin brick towers, a limestone rose, and a slate flèche crown the cathedral above a compact city parvis. One per city; raises attractiveness. Paris on the Delaware.",
+    "name": "Notre-Dame de la Delaware"
+  },
+  "_about_ZS1": "Lobstertown civic set (ZS1, 2026-11-17): built by gemini lt_designs/civic.py, names NA_LT<Design>_L1_WxD (the lot is in the name). water and power use templates from other packs (see TEMPLATES in newfrance_setup.py); the transfer barn is a decorative park (no garbage template in any installed mod).",
+  "NA_LTFireStation_L1_4x4": {
+    "lot": [
+      4,
+      4
+    ],
+    "kind": "fire",
+    "vehicle_points_lot_m": [
+      [
+        15.4,
+        3.0
+      ],
+      [
+        21.2,
+        3.0
+      ],
+      [
+        27.0,
+        3.0
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      7.45,
+      0.6
+    ],
+    "name": "Lobstertown Engine House",
+    "description": "Fire station. Three arched engine bays in a fieldstone ground floor, a shingled bunk room above and a stone hose tower at the back. Lobstertown."
+  },
+  "NA_LTConstabulary_L1_4x4": {
+    "lot": [
+      4,
+      4
+    ],
+    "kind": "police",
+    "vehicle_points_lot_m": [
+      [
+        25.52,
+        3.0
+      ],
+      [
+        9.65,
+        3.0
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      16.0,
+      0.6
+    ],
+    "name": "Harbour Constabulary",
+    "description": "Police station. A steep-roofed fieldstone station house with a corner stair turret and two carriage doors for the patrol cars. Lobstertown."
+  },
+  "NA_LTCottageHospital_L1_4x4": {
+    "lot": [
+      4,
+      4
+    ],
+    "kind": "hospital",
+    "vehicle_points_lot_m": [
+      [
+        25.52,
+        4.1
+      ],
+      [
+        9.65,
+        4.1
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      16.0,
+      0.6
+    ],
+    "values": {
+      "Hospital": {
+        "m_PatientCapacity": 150,
+        "m_AmbulanceCapacity": 10,
+        "m_TreatmentBonus": 20
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 60000,
+        "m_ElectricityConsumption": 3000,
+        "m_WaterConsumption": 1500,
+        "m_GarbageAccumulation": 20
+      }
+    },
+    "name": "Lobstertown Cottage Hospital",
+    "description": "Clinic. A shingled cottage hospital behind a long verandah, with two stone ward wings round a court and ambulance doors at the front. Lobstertown."
+  },
+  "NA_LTGrammarSchool_L1_4x5": {
+    "lot": [
+      4,
+      5
+    ],
+    "kind": "elementary",
+    "pedestrian_point_lot_m": [
+      16.0,
+      0.6
+    ],
+    "name": "Lobstertown Grammar School",
+    "description": "Elementary school. Arched fieldstone classrooms under a shingled upper floor and a hipped roof with a louvred cupola. Lobstertown."
+  },
+  "NA_LTAcademy_L1_5x6": {
+    "lot": [
+      5,
+      6
+    ],
+    "kind": "school",
+    "pedestrian_point_lot_m": [
+      20.0,
+      0.6
+    ],
+    "name": "Lobstertown Academy",
+    "description": "High school. Three storeys of fieldstone and shingle with a clock stage on the ridge and two classroom wings round a court. Lobstertown."
+  },
+  "NA_LTPostOffice_L1_3x3": {
+    "lot": [
+      3,
+      3
+    ],
+    "kind": "post",
+    "vehicle_points_lot_m": [
+      [
+        6.2,
+        3.0
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      12.0,
+      0.6
+    ],
+    "name": "Lobstertown Post Office",
+    "description": "Post office. A fieldstone hall under a big shingled gable, a round corner turret and a carriage door for the mail van. Lobstertown."
+  },
+  "NA_LTTownHall_L1_4x5": {
+    "lot": [
+      4,
+      5
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      0.6
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 50
+      }
+    },
+    "name": "Lobstertown Town Hall",
+    "description": "Town hall and landmark. A fieldstone arcade under a great shingled gable with a belfry on the ridge and a stair turret. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTLibrary_L1_4x4": {
+    "lot": [
+      4,
+      4
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      0.6
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 30
+      }
+    },
+    "name": "Lobstertown Free Library",
+    "description": "Public library and landmark. A long fieldstone reading room with arched windows, a steep slate roof and a turret with a lookout. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTWaterworks_L1_3x3": {
+    "lot": [
+      3,
+      3
+    ],
+    "kind": "water",
+    "pedestrian_point_lot_m": [
+      12.0,
+      0.6
+    ],
+    "values": {
+      "WaterPumpingStation": {
+        "m_AllowedWaterTypes": 1
+      }
+    },
+    "name": "Lobstertown Waterworks",
+    "description": "Water pumping station. A fieldstone pump house drawing groundwater, with a steep roof, a louvred cupola and a tall stone stack. Lobstertown."
+  },
+  "NA_LTPowerhouse_L1_4x5": {
+    "lot": [
+      4,
+      5
+    ],
+    "kind": "power",
+    "pedestrian_point_lot_m": [
+      16.0,
+      0.6
+    ],
+    "name": "Lobstertown Powerhouse",
+    "description": "Power plant. A two-storey fieldstone and shingle engine house with two tall stone stacks. Lobstertown."
+  },
+  "NA_LTTransferBarn_L1_3x3": {
+    "lot": [
+      3,
+      3
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      6.35,
+      0.6
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "name": "Lobstertown Transfer Barn",
+    "description": "Decorative. A fieldstone barn with arched wagon doors under a big gable, to stand in front of the town's garbage works. Lobstertown."
+  },
+  "NA_LTSirenTheatre_L1_4x5": {
+    "lot": [
+      4,
+      5
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 60
+      }
+    },
+    "name": "Siren Theatre",
+    "description": "Theatre and landmark. A brick opera house whose doors sit inside a giant cream scallop shell, with copper-capped stair towers and a mermaid in the pediment. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTCarouselHouse_L1_3x3": {
+    "lot": [
+      3,
+      3
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      12.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 40
+      }
+    },
+    "name": "Seahorse Carousel House",
+    "description": "Landmark. A glazed octagon round a carousel, a scalloped valance, iron seahorses on every corner and a striped ogee dome. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTLobstermensLodge_L1_3x3": {
+    "lot": [
+      3,
+      3
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      12.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 40
+      }
+    },
+    "name": "Lobstermen's Lodge No. 1",
+    "description": "Landmark. A navy clapboard lodge hall with lancet windows and a twelve-metre red lobster sprawled across the ridge. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTTidewaterAquarium_L1_4x3": {
+    "lot": [
+      4,
+      3
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 50
+      }
+    },
+    "name": "Tidewater Aquarium",
+    "description": "Landmark. A granite rotunda under a copper dome, an iron octopus wrapped round the door and fish swimming round the drum. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTExhibitionHall_L1_6x5": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      24.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 60
+      }
+    },
+    "name": "Saltwater Exhibition Hall",
+    "description": "Landmark. A glass and iron barrel vault between granite aisles, a scallop fan at each end, cast iron seahorses on the piers and a copper whale on the ridge. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTMaritimeCollege_L1_6x6": {
+    "lot": [
+      6,
+      6
+    ],
+    "kind": "school",
+    "pedestrian_point_lot_m": [
+      24.0,
+      0.6
+    ],
+    "values": {
+      "School": {
+        "m_Level": 4,
+        "m_StudentCapacity": 2000
+      }
+    },
+    "name": "Maine Maritime College",
+    "description": "College and university. Three storeys of Richardsonian fieldstone and weathered shingle with a corner stair turret, ridge clock tower and twin lecture wings round a court. Lobstertown."
+  },
+  "NA_LTGeneralHospital_L1_6x5": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "hospital",
+    "vehicle_points_lot_m": [
+      [
+        41.74,
+        4.1
+      ],
+      [
+        35.83,
+        4.1
+      ],
+      [
+        29.91,
+        4.1
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      24.0,
+      0.6
+    ],
+    "name": "Lobstertown General Hospital",
+    "description": "Full-capacity hospital. A three-storey fieldstone and shingle main pavilion behind a wide verandah, crowned with a ridge cupola, with three ambulance bays and twin stone ward wings. Lobstertown."
+  },
+  "NA_LTKingCrabPalace_L1_5x4": {
+    "lot": [
+      5,
+      4
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      20.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 65
+      }
+    },
+    "name": "King Crab Palace",
+    "description": "Seaside bathhouse and landmark. A pompous Beaux-Arts granite and cream pavilion under a striped melon dome crowned by an eleven-metre red King Crab hoisting a copper lantern, with starfish medallions over every arched window. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTSacredCodExchange_L1_5x4": {
+    "lot": [
+      5,
+      4
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      20.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 65
+      }
+    },
+    "name": "The Sacred Cod Exchange",
+    "description": "Harbour fish market and landmark. A brick and granite arched market hall with a grand front clock gable, twin copper towers topped with crossed red lobster claws, and a fourteen-metre copper cod leaping across the ridge. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTSeaTurtlePavilion_L1_4x4": {
+    "lot": [
+      4,
+      4
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 60
+      }
+    },
+    "name": "The Great Sea Turtle Pavilion",
+    "description": "Unique coastal landmark. An oval verdigris-copper sea-turtle carapace with raised hexagonal scutes and a pale stone marginal border crowns an arched granite pavilion, with a proud arched turtle neck and head projecting over the entrance, broad swept-back paddle flippers along the sides, and a tapered tail behind. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTClipperBowHall_L1_4x5": {
+    "lot": [
+      4,
+      5
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 70
+      }
+    },
+    "name": "The Clipper's Bow Maritime Hall",
+    "description": "Maritime museum and landmark. A granite hall whose upper front projects forward as a sculpted clipper-ship prow with a copper figurehead, porthole medallions, twin giant cast-iron anchors framing the doors, and a crow's-nest lookout on the ridge. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTNautilusMarineGallery_L1_4x3": {
+    "lot": [
+      4,
+      3
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      16.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 50
+      }
+    },
+    "name": "Nautilus Marine Gallery",
+    "description": "Unique landmark. A Beaux-Arts limestone and cream marine gallery with porthole-trimmed copper-hipped wings, a spiral nautilus entrance relief, and a colossal three-dimensional chambered nautilus shell coiling atop the central pavilion. One per city; raises attractiveness. Lobstertown."
+  },
+  "NA_LTWalrusBathhouse_L1_5x4": {
+    "lot": [
+      5,
+      4
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      20.0,
+      1.5
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 65
+      }
+    },
+    "name": "Walrus Bathhouse",
+    "description": "Unique landmark. A Gilded-Age granite and silver-shingle coastal thermal bathhouse beneath a blue-grey slate mansard and twin octagonal copper cupolas, crowned by a reclining thirteen-metre copper walrus with sweeping ivory tusks. One per city; raises attractiveness. Lobstertown."
+  }
+}

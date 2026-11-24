@@ -1,0 +1,31 @@
+
+def repair_export(obj,path,hits,overlaps):
+    """Resolve sub-millimetre ties that become visible only after FBX round-trip."""
+    import bpy
+    from detail_mesh import smooth_export
+    from nf_build import export_fbx
+    from types import SimpleNamespace
+
+    for _ in range(7):
+        if not hits:
+            break
+        data=obj.data
+        mat=data.materials[0]
+        uv=data.uv_layers.active.data
+        raw=SimpleNamespace(vertices=[tuple(v.co) for v in data.vertices],
+            faces=[list(p.vertices) for p in data.polygons],
+            uvs=[[tuple(uv[i].uv) for i in p.loop_indices] for p in data.polygons])
+        separate(raw,obj,hits)
+        new=bpy.data.meshes.new(obj.name+" repaired")
+        new.from_pydata(raw.vertices,[],raw.faces)
+        layer=new.uv_layers.new(name="UVMap")
+        for poly,coords in zip(new.polygons,raw.uvs):
+            for index,coord in zip(poly.loop_indices,coords):
+                layer.data[index].uv=coord
+        new.materials.append(mat)
+        obj.data=new
+        bpy.data.meshes.remove(data)
+        new.update()
+        hits=overlaps(obj)
+    smooth_export(obj)
+    export_fbx(obj,path)

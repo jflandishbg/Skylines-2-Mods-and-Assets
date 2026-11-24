@@ -1,0 +1,174 @@
+{
+  "sizes": {
+    "main": 4096,
+    "_LOD1": 2048,
+    "_LOD2": 1024
+  },
+  "gutter_px_main": 16,
+  "tiles": [
+    {
+      "key": "StuccoOchre",
+      "kind": "scan",
+      "source": "render/Plaster001",
+      "target_rgb": [204, 172, 122],
+      "desat": 0.2,
+      "px": [512, 512],
+      "metres": [2.8, 2.8]
+    },
+    {
+      "key": "StuccoCoral",
+      "kind": "scan",
+      "source": "render/PaintedPlaster012",
+      "target_rgb": [188, 134, 118],
+      "desat": 0.3,
+      "px": [512, 512],
+      "metres": [2.8, 2.8]
+    },
+    {
+      "key": "StuccoCream",
+      "kind": "scan",
+      "source": "render/Plaster003",
+      "target_rgb": [220, 212, 196],
+      "desat": 0.25,
+      "px": [512, 512],
+      "metres": [2.8, 2.8]
+    },
+    {
+      "key": "StuccoSage",
+      "kind": "scan",
+      "source": "render/PaintedPlaster011",
+      "target_rgb": [152, 170, 156],
+      "desat": 0.3,
+      "px": [512, 512],
+      "metres": [2.8, 2.8]
+    },
+    {
+      "key": "RoseBrick",
+      "kind": "scan",
+      "source": "brick/Bricks085",
+      "target_rgb": [156, 102, 88],
+      "desat": 0.25,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "Clapboard",
+      "kind": "scan",
+      "source": "wood/WoodSiding009",
+      "target_rgb": [216, 210, 194],
+      "desat": 0.25,
+      "tint_channel": 1,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "Dressed",
+      "kind": "scan",
+      "source": "stone/Bricks108A",
+      "target_rgb": [212, 205, 190],
+      "desat": 0.4,
+      "px": [512, 512],
+      "metres": [2.6, 2.6]
+    },
+    {
+      "key": "StoneBase",
+      "kind": "scan",
+      "source": "stone/Bricks066",
+      "target_rgb": [122, 120, 116],
+      "desat": 0.5,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "SlateDark",
+      "kind": "scan",
+      "source": "slate/RoofingTiles001",
+      "target_rgb": [64, 68, 76],
+      "desat": 0.45,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "TinGreen",
+      "kind": "standing_seam",
+      "color": [84, 122, 106],
+      "seam_count": 6,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "TinFlat",
+      "kind": "scan",
+      "source": "tin/MetalPlates005",
+      "target_rgb": [88, 94, 98],
+      "desat": 0.5,
+      "px": [256, 256],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "CastIron",
+      "kind": "flat_paint",
+      "color": [30, 33, 36],
+      "metalness": 165,
+      "smoothness": 95,
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "CharlestonGreen",
+      "kind": "flat_paint",
+      "color": [34, 58, 46],
+      "smoothness": 60,
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "BayouBlue",
+      "kind": "flat_paint",
+      "color": [110, 146, 158],
+      "smoothness": 55,
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Oxblood",
+      "kind": "flat_paint",
+      "color": [106, 44, 40],
+      "smoothness": 60,
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "TrimWhite",
+      "kind": "flat_paint",
+      "color": [228, 224, 214],
+      "tint_channel": 2,
+      "px": [256, 256],
+      "metres": [3.0, 3.0]
+    },
+    {
+      "key": "Deck",
+      "kind": "scan",
+      "source": "wood/Planks021",
+      "target_rgb": [124, 110, 94],
+      "desat": 0.3,
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Chimney",
+      "kind": "scan",
+      "source": "brick/Bricks094",
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Black",
+      "kind": "flat_paint",
+      "color": [26, 28, 30],
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    }
+  ],
+  "signs": []
+}

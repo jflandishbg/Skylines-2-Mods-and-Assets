@@ -1,0 +1,11 @@
+<Project>
+  <!-- Shared by the mod, the purity check, tests and harness. Override GameDir in Local.props or CS2_GAME_DIR. -->
+  <Import Project="$(MSBuildThisFileDirectory)Local.props" Condition="Exists('$(MSBuildThisFileDirectory)Local.props')" />
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <GameDir Condition="'$(GameDir)' == '' and '$(CS2_GAME_DIR)' != ''">$(CS2_GAME_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">C:\SteamLibrary\steamapps\common\Cities Skylines II</GameDir>
+    <GameManaged>$(GameDir)\Cities2_Data\Managed</GameManaged>
+  </PropertyGroup>
+</Project>

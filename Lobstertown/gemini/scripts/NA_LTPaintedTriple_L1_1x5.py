@@ -1,0 +1,10 @@
+"""Lobstertown PaintedTriple, lot 1x5. Built from lt_designs/shorerows.py."""
+from lt_designs.shorerows import build as design
+
+ZONE = "ZL1"
+HOUSEHOLDS = 3
+PARTY_WALLS = ('left', 'right')
+
+
+def build(lod):
+    design(lod, D=5, **{'hh': 3, 'roof': 'flat', 'band': True, 'door': 'Green', 'door_x': -2.5, 'porch': 'stack', 'barge': True, 'finial': True, 'backporch': 2, 'roof_mat': 'SlateDark', 'rear': ({'k': 'ell', 'roof': 'gable', 'h': 6.7, 'mat': 'Clapboard', 'rmat': 'SlateDark', 'L': 6.0, 'min': 4.0}, {'k': 'ell', 'roof': 'gable', 'h': 3.55, 'mat': 'BoardBatten', 'rmat': 'TinGreen', 'L': 6.0, 'min': 3.0}, {'k': 'carriage', 'roof': 'across', 'h': 3.55, 'mat': 'Clapboard', 'rmat': 'TinOxide', 'L': 8.0, 'min': 6.0, 'grow': True}), 'palette': 'victorian'})

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Offline tests: the whole planning core against synthetic cities. Run: dotnet test Tests -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Core\**\*.cs" LinkBase="Core" />
+    <Compile Include="..\Testing\**\*.cs" LinkBase="Testing" />
+    <Compile Include="*.cs" />
+    <Reference Include="$(GameManaged)\Unity.Mathematics.dll" />
+    <Reference Include="$(GameManaged)\Colossal.Mathematics.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,161 @@
+{
+  "sizes": {
+    "main": 4096,
+    "_LOD1": 2048,
+    "_LOD2": 1024
+  },
+  "gutter_px_main": 16,
+  "tiles": [
+    {
+      "key": "Brick074",
+      "kind": "scan",
+      "source": "brick/Bricks074",
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "Brick085",
+      "kind": "scan",
+      "source": "brick/Bricks085",
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "BuffBrick",
+      "kind": "scan",
+      "source": "brick/Bricks054",
+      "target_rgb": [196, 178, 146],
+      "desat": 0.25,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "Greystone",
+      "kind": "scan",
+      "source": "stone/Bricks083",
+      "px": [512, 512],
+      "metres": [3.0, 3.0]
+    },
+    {
+      "key": "Dressed",
+      "kind": "scan",
+      "source": "stone/Bricks108A",
+      "target_rgb": [212, 206, 194],
+      "desat": 0.4,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "StoneBase",
+      "kind": "scan",
+      "source": "stone/Bricks066",
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "SlateDark",
+      "kind": "scan",
+      "source": "slate/RoofingTiles001",
+      "target_rgb": [68, 72, 78],
+      "desat": 0.45,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "TinGreen",
+      "kind": "standing_seam",
+      "color": [86, 118, 102],
+      "seam_count": 6,
+      "px": [512, 512],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "TinFlat",
+      "kind": "scan",
+      "source": "tin/MetalPlates005",
+      "target_rgb": [96, 100, 104],
+      "desat": 0.5,
+      "px": [256, 256],
+      "metres": [2.4, 2.4]
+    },
+    {
+      "key": "Clapboard",
+      "kind": "scan",
+      "source": "wood/WoodSiding009",
+      "px": [512, 512],
+      "metres": [2.4, 2.4],
+      "tint_channel": 1,
+      "lift_target_rgb": [236, 234, 228]
+    },
+    {
+      "key": "BoardBatten",
+      "kind": "board_batten",
+      "nboard": 8,
+      "color": [236, 234, 228],
+      "px": [512, 512],
+      "metres": [2.4, 2.4],
+      "tint_channel": 0
+    },
+    {
+      "key": "TrimWhite",
+      "kind": "flat_paint",
+      "color": [226, 225, 219],
+      "px": [256, 256],
+      "metres": [3.0, 3.0],
+      "tint_channel": 2
+    },
+    {
+      "key": "Deck",
+      "kind": "scan",
+      "source": "wood/Planks021",
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Chimney",
+      "kind": "scan",
+      "source": "brick/Bricks094",
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Green",
+      "kind": "flat_paint",
+      "color": [46, 76, 62],
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Oxblood",
+      "kind": "flat_paint",
+      "color": [108, 46, 42],
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    },
+    {
+      "key": "Black",
+      "kind": "flat_paint",
+      "color": [28, 30, 32],
+      "px": [256, 256],
+      "metres": [2.0, 2.0]
+    }
+  ],
+  "signs": [
+    {
+      "key": "Sign_HarbourBakery",
+      "text": "HARBOUR BAKERY",
+      "board": [31, 56, 43],
+      "ink": [214, 182, 104],
+      "metres": [3.0, 0.58],
+      "px": [512, 100]
+    },
+    {
+      "key": "Sign_AtlasWorks",
+      "text": "ATLAS PROVISIONS",
+      "board": [34, 45, 64],
+      "ink": [226, 220, 200],
+      "metres": [3.0, 0.58],
+      "px": [512, 100]
+    }
+  ]
+}

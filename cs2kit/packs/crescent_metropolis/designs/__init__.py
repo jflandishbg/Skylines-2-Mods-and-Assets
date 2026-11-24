@@ -1,0 +1,1 @@
+"""Crescent Metropolis architectural designs."""

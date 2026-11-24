@@ -1,0 +1,558 @@
+{
+  "_about": "Service buildings for newfrance_setup.py. Key = imported building name (services have no _L1_WxD in the name; their lot is given here). kind = fire/police/hospital/school/post/landmark (templates from the Chicago Region Pack; landmark = its unique library park). Points are GPT lot metres (front-left origin, +Y to the rear). values = our numbers over the template's, per component. Remove an entry and re-run the setup to drop the service wiring. name/description = the menu name and tooltip written beside the prefab as <key>_en-US.loc; a picture at NewFrance/thumbnails/<key>.png becomes the asset-bar icon. kind park = a repeatable park monument (landmark without the one-per-city rule); drop = template components to leave out. unlock = the vanilla development-tree node that unlocks it (monuments use the first Parks node).",
+  "NA_PdDCaserneArcCanal": {
+    "lot": [
+      5,
+      5
+    ],
+    "kind": "fire",
+    "vehicle_points_lot_m": [
+      [
+        8.75,
+        4.588
+      ],
+      [
+        18,
+        4.588
+      ],
+      [
+        27.35,
+        4.588
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      2.35,
+      1.888
+    ],
+    "name": "Caserne de l’Arc-du-Canal",
+    "description": "Fire station. Three engine bays under limestone arches, with a brick hose tower that doubles as the quarter’s lookout. Paris on the Delaware."
+  },
+  "NA_PdDHotelDeVilleDeuxRives": {
+    "lot": [
+      8,
+      7
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      28,
+      1.523
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 50
+      }
+    },
+    "name": "Hôtel de Ville des Deux-Rives",
+    "description": "City hall and landmark. A brick and limestone town hall with a tall clock campanile over the square. One per city; raises attractiveness and gives residents somewhere to linger. Paris on the Delaware."
+  },
+  "NA_PdDCommissariatQuais": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "police",
+    "vehicle_points_lot_m": [
+      [
+        31.4,
+        4.397
+      ],
+      [
+        40.2,
+        4.397
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      17.4,
+      1.697
+    ],
+    "name": "Commissariat des Quais",
+    "description": "Police station. A turreted brick commissariat with a clock tower and two patrol-car bays facing the quay. Paris on the Delaware."
+  },
+  "NA_PdDCliniqueTuiles": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "hospital",
+    "vehicle_points_lot_m": [
+      [
+        43.65,
+        3.786
+      ],
+      [
+        51.12,
+        3.786
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      26.7,
+      1.086
+    ],
+    "values": {
+      "Hospital": {
+        "m_PatientCapacity": 150,
+        "m_AmbulanceCapacity": 10,
+        "m_TreatmentBonus": 20
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 60000,
+        "m_ElectricityConsumption": 3000,
+        "m_WaterConsumption": 1500,
+        "m_GarbageAccumulation": 20
+      }
+    },
+    "_note": "clinic: the Chicago hospital template scaled down (500 patients/30 ambulances -> 150/10)",
+    "name": "Clinique des Tuiles",
+    "description": "Neighbourhood clinic. Steep patterned-tile roofs over a brick and stone dispensary, with ambulance bays at the side. A smaller companion to the Hôpital des Invalides. Paris on the Delaware."
+  },
+  "NA_PdDLyceeOrmes": {
+    "lot": [
+      10,
+      8
+    ],
+    "kind": "school",
+    "pedestrian_point_lot_m": [
+      40,
+      1.086
+    ],
+    "name": "Lycée des Ormes",
+    "description": "High school. A domed central pavilion between two brick classroom wings, set back behind its forecourt. Paris on the Delaware."
+  },
+  "NA_PdDHotelPostesBassin": {
+    "lot": [
+      6,
+      6
+    ],
+    "kind": "post",
+    "vehicle_points_lot_m": [
+      [
+        32,
+        4.085
+      ],
+      [
+        41,
+        4.085
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      13.3,
+      1.086
+    ],
+    "name": "Hôtel des Postes du Bassin",
+    "description": "Post office. A mansard-roofed postal hall with a clock over the door and van bays for the sorting room. Paris on the Delaware."
+  },
+  "NA_PdDHopitalInvalides": {
+    "lot": [
+      8,
+      8
+    ],
+    "kind": "hospital",
+    "vehicle_points_lot_m": [
+      [
+        8.7,
+        4.086
+      ],
+      [
+        15.95,
+        4.086
+      ],
+      [
+        52,
+        4.086
+      ]
+    ],
+    "pedestrian_point_lot_m": [
+      32,
+      1.086
+    ],
+    "name": "Hôpital des Invalides",
+    "description": "Hospital. Brick ward wings gathered around a gilded dome, with a covered ambulance entrance. The district’s main hospital. Paris on the Delaware."
+  },
+  "NA_PdDFacultePantheon": {
+    "lot": [
+      9,
+      8
+    ],
+    "kind": "school",
+    "pedestrian_point_lot_m": [
+      36,
+      7.8
+    ],
+    "values": {
+      "School": {
+        "m_Level": 4,
+        "m_StudentCapacity": 2000
+      }
+    },
+    "_note": "university: high-school template at level 4",
+    "name": "Faculté du Panthéon",
+    "description": "College. A limestone portico and drum dome between two brick lecture wings. Paris on the Delaware."
+  },
+  "NA_PdDBibliothequeGenevieve": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      24,
+      1.086
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 30
+      }
+    },
+    "name": "Bibliothèque Geneviève",
+    "description": "Public library and landmark. A long reading room carried on a stone arcade, lit by a row of arched windows. One per city; raises attractiveness and offers quiet leisure. Paris on the Delaware."
+  },
+  "NA_PdDEcoleRuelle": {
+    "lot": [
+      8,
+      6
+    ],
+    "kind": "elementary",
+    "pedestrian_point_lot_m": [
+      16.4,
+      1.646
+    ],
+    "name": "École de la Ruelle",
+    "description": "Elementary school. A two-storey brick schoolhouse with a bell lantern and clock over the entrance. Paris on the Delaware."
+  },
+  "NA_PdDEcoleQuai": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "elementary",
+    "pedestrian_point_lot_m": [
+      27,
+      1.086
+    ],
+    "name": "École du Quai",
+    "description": "Elementary school. A low brick schoolhouse with a corner stair turret and a gabled entrance. Paris on the Delaware."
+  },
+  "NA_PdDColonneEcluse": {
+    "lot": [
+      2,
+      2
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      8.0,
+      0.7
+    ],
+    "name": "Colonne de l’Écluse",
+    "description": "Park monument. A limestone column banded in bronze and crowned by a verdigris lantern, raised to mark the opening of the canal lock in 1834. Stands on a gravel rond-point with clipped hedges. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 8
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 3000,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 60000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 600
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDKiosqueMariniers": {
+    "lot": [
+      2,
+      2
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      8.0,
+      0.7
+    ],
+    "name": "Kiosque des Mariniers",
+    "description": "Park bandstand. An octagonal iron kiosk with a zinc roof and gilded finial, where the boatmen’s band plays on Sunday afternoons. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 10
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 3500,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 70000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 700
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDSquareColonneMorris": {
+    "lot": [
+      1,
+      1
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      4.0,
+      0.7
+    ],
+    "name": "Square de la Colonne Morris",
+    "description": "Pocket square. A green advertising column pasted with theatre posters beside a cast-iron drinking fountain, on a single paved cell. Fits the gaps a city leaves over. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 4
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 1200,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 20000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 300
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDArcDeuxRives": {
+    "lot": [
+      3,
+      2
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      12.0,
+      0.7
+    ],
+    "name": "Arc des Deux-Rives",
+    "description": "Park monument. A triumphal arch in pale limestone, inscribed AUX BATELIERS DES DEUX RIVES, to the boatmen of both banks. Paved through the arch so a promenade can pass under it. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 15
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 6000,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 150000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 1000
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDFontaineGrotte": {
+    "lot": [
+      2,
+      3
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      8.0,
+      0.7
+    ],
+    "name": "Fontaine de la Grotte",
+    "description": "Park fountain. A rusticated grotto wall with a pediment, bronze urns in its niches and a long basin with two jets, in the manner of a Paris garden fountain. Place as many as you like. Paris on the Delaware.",
+    "drop": [
+      "Workplace"
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 15
+      },
+      "ServiceConsumption": {
+        "m_Upkeep": 5500,
+        "m_ElectricityConsumption": 20,
+        "m_WaterConsumption": 10
+      },
+      "PlaceableObject": {
+        "m_ConstructionCost": 140000,
+        "m_XPReward": 50
+      },
+      "ServiceCoverage": {
+        "m_Range": 1200,
+        "m_Capacity": 1500,
+        "m_Magnitude": 3
+      },
+      "Park": {
+        "m_MaintenancePool": 1000
+      }
+    },
+    "unlock": "BasicParks&RecreationNode"
+  },
+  "NA_PdDUsineEauxClaires": {
+    "lot": [
+      6,
+      5
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      24,
+      6.193
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (water_pump), wired as a placeable monument until a water_pump template is found; GPT's connection point None",
+    "description": "Waterworks (decorative for now). A limestone temple fronts the river pumping works, with brick engine rooms and intake grilles on the quay side. Paris on the Delaware.",
+    "name": "Usine des Eaux Claires"
+  },
+  "NA_PdDChateauEauOrmes": {
+    "lot": [
+      5,
+      5
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      20,
+      1.087
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (water_tower), wired as a placeable monument until a water_tower template is found; GPT's connection point [20, 1.5]",
+    "description": "Water tower (decorative for now). Eight brick piers carry a broad corbelled water tank beneath a low slate roof and lantern. Paris on the Delaware.",
+    "name": "Château d’eau des Ormes"
+  },
+  "NA_PdDCentraleSoleil": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      28,
+      1.086
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (power), wired as a placeable monument until a power template is found; GPT's connection point [49, 42]",
+    "description": "Generating station (decorative for now). A brick generating station marks the quay with a stained-glass sunburst, a roof monitor, and two chimney stacks. Paris on the Delaware.",
+    "name": "Centrale du Soleil"
+  },
+  "NA_PdDTourDesOndes": {
+    "lot": [
+      7,
+      6
+    ],
+    "kind": "park",
+    "pedestrian_point_lot_m": [
+      28,
+      1.087
+    ],
+    "drop": [
+      "Workplace"
+    ],
+    "unlock": "BasicParks&RecreationNode",
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 3
+      }
+    },
+    "_note": "R8 utility (telecom), wired as a placeable monument until a telecom template is found; GPT's connection point [28, 1.5]",
+    "description": "Radio tower (decorative for now). Four brick piers carry an open iron lattice and an antenna above the city’s broadcast offices. Paris on the Delaware.",
+    "name": "Tour des Ondes"
+  },
+  "NA_PdDOperaDesDeuxFleuves": {
+    "lot": [
+      9,
+      8
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      36,
+      1.481
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 40
+      }
+    },
+    "description": "Landmark. A grand staircase and limestone loggia lead into the river city's opera house beneath a green copper dome. One per city; raises attractiveness. Paris on the Delaware.",
+    "name": "Opéra des Deux-Fleuves"
+  },
+  "NA_PdDNotreDameDelaware": {
+    "lot": [
+      10,
+      8
+    ],
+    "kind": "landmark",
+    "pedestrian_point_lot_m": [
+      40,
+      1.086
+    ],
+    "values": {
+      "Attraction": {
+        "m_Attractiveness": 45
+      }
+    },
+    "description": "Landmark. Twin brick towers, a limestone rose, and a slate flèche crown the cathedral above a compact city parvis. One per city; raises attractiveness. Paris on the Delaware.",
+    "name": "Notre-Dame de la Delaware"
+  }
+}

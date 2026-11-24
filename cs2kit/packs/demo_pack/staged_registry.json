@@ -1,0 +1,661 @@
+{
+  "pack_id": "demo_pack",
+  "title": "Demo Pack",
+  "prefix": "NA_DM",
+  "variation_group": "Demo",
+  "colour_random": [
+    2,
+    4,
+    5
+  ],
+  "assets": {
+    "NA_DMDemoRowBrick_L1_1x2": {
+      "name": "NA_DMDemoRowBrick_L1_1x2",
+      "design": "DemoRowBrick",
+      "zone_key": "ZL1",
+      "zone_kind": "residential",
+      "game_zone": "Demo Brick Rows",
+      "module": "rowhouse",
+      "lot": [
+        1,
+        2
+      ],
+      "level": 1,
+      "access": "Front",
+      "households": 2,
+      "party_walls": [
+        "left",
+        "right"
+      ],
+      "party_skip": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "budget": [
+        45000,
+        9000,
+        1000
+      ],
+      "density_floor": 8.0,
+      "crown_allowed": false,
+      "crown_max_m2": 150.0,
+      "max_front_setback_m": 1.2,
+      "min_coverage_pct": 70.0,
+      "allow_right_corner": false,
+      "space_multiplier": 0,
+      "product": "",
+      "colour_sets": [
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.3068,
+            0.3864,
+            0.3372
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.2273,
+            0.3068,
+            0.407
+          ]
+        ]
+      ],
+      "colour_random": [
+        2,
+        4,
+        5
+      ],
+      "params": {
+        "mode": "res",
+        "storeys": 2,
+        "wall": "Brick074",
+        "roof_mat": "SlateDark",
+        "door": "Green"
+      },
+      "display_name": "Harbour Brick Rowhouse",
+      "description": "Two-and-a-half storey brick rowhouse with granite plinth and rear carriage wing.",
+      "render_thumbnail": false,
+      "service": null
+    },
+    "NA_DMDemoRowBrick_L1_1x3": {
+      "name": "NA_DMDemoRowBrick_L1_1x3",
+      "design": "DemoRowBrick",
+      "zone_key": "ZL1",
+      "zone_kind": "residential",
+      "game_zone": "Demo Brick Rows",
+      "module": "rowhouse",
+      "lot": [
+        1,
+        3
+      ],
+      "level": 1,
+      "access": "Front",
+      "households": 3,
+      "party_walls": [
+        "left",
+        "right"
+      ],
+      "party_skip": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "budget": [
+        45000,
+        9000,
+        1000
+      ],
+      "density_floor": 8.0,
+      "crown_allowed": false,
+      "crown_max_m2": 150.0,
+      "max_front_setback_m": 1.2,
+      "min_coverage_pct": 70.0,
+      "allow_right_corner": false,
+      "space_multiplier": 0,
+      "product": "",
+      "colour_sets": [
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.3068,
+            0.3864,
+            0.3372
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.2273,
+            0.3068,
+            0.407
+          ]
+        ]
+      ],
+      "colour_random": [
+        2,
+        4,
+        5
+      ],
+      "params": {
+        "mode": "res",
+        "storeys": 2,
+        "wall": "Brick074",
+        "roof_mat": "SlateDark",
+        "door": "Green"
+      },
+      "display_name": "Harbour Brick Rowhouse",
+      "description": "Two-and-a-half storey brick rowhouse with granite plinth and rear carriage wing.",
+      "render_thumbnail": false,
+      "service": null
+    },
+    "NA_DMDemoCornerLeftCorner_L1_2x3": {
+      "name": "NA_DMDemoCornerLeftCorner_L1_2x3",
+      "design": "DemoCornerLeftCorner",
+      "zone_key": "ZL1",
+      "zone_kind": "residential",
+      "game_zone": "Demo Brick Rows",
+      "module": "rowhouse",
+      "lot": [
+        2,
+        3
+      ],
+      "level": 1,
+      "access": "LeftCorner",
+      "households": 4,
+      "party_walls": [
+        "right"
+      ],
+      "party_skip": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "budget": [
+        45000,
+        9000,
+        1000
+      ],
+      "density_floor": 8.0,
+      "crown_allowed": false,
+      "crown_max_m2": 150.0,
+      "max_front_setback_m": 1.2,
+      "min_coverage_pct": 70.0,
+      "allow_right_corner": false,
+      "space_multiplier": 0,
+      "product": "",
+      "colour_sets": [
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.3068,
+            0.3864,
+            0.3372
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.2273,
+            0.3068,
+            0.407
+          ]
+        ]
+      ],
+      "colour_random": [
+        2,
+        4,
+        5
+      ],
+      "params": {
+        "mode": "res",
+        "storeys": 3,
+        "wall": "Brick085",
+        "roof_mat": "TinGreen",
+        "door": "Oxblood",
+        "corner": true
+      },
+      "display_name": "Harbour Corner Rowhouse",
+      "description": "Two-wide corner brick rowhouse turning the street corner with a projecting bay.",
+      "render_thumbnail": false,
+      "service": null
+    },
+    "NA_DMDemoMixedBakery_L1_1x3": {
+      "name": "NA_DMDemoMixedBakery_L1_1x3",
+      "design": "DemoMixedBakery",
+      "zone_key": "ZM1",
+      "zone_kind": "mixed",
+      "game_zone": "Demo Mixed Street",
+      "module": "rowhouse",
+      "lot": [
+        1,
+        3
+      ],
+      "level": 1,
+      "access": "Front",
+      "households": 2,
+      "party_walls": [
+        "left",
+        "right"
+      ],
+      "party_skip": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "budget": [
+        45000,
+        9000,
+        1000
+      ],
+      "density_floor": 8.0,
+      "crown_allowed": false,
+      "crown_max_m2": 150.0,
+      "max_front_setback_m": 1.2,
+      "min_coverage_pct": 70.0,
+      "allow_right_corner": false,
+      "space_multiplier": 0,
+      "product": "",
+      "colour_sets": [
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.3068,
+            0.3864,
+            0.3372
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.2273,
+            0.3068,
+            0.407
+          ]
+        ]
+      ],
+      "colour_random": [
+        2,
+        4,
+        5
+      ],
+      "params": {
+        "mode": "mixed",
+        "storeys": 3,
+        "wall": "BuffBrick",
+        "roof_mat": "SlateDark",
+        "door": "Green",
+        "sign": "Sign_HarbourBakery"
+      },
+      "display_name": "Harbour Bakery Block",
+      "description": "Ground-floor timber shopfront with painted fascia sign and flats above.",
+      "render_thumbnail": false,
+      "service": null
+    },
+    "NA_DMDemoMixedBakery_L1_2x3": {
+      "name": "NA_DMDemoMixedBakery_L1_2x3",
+      "design": "DemoMixedBakery",
+      "zone_key": "ZM1",
+      "zone_kind": "mixed",
+      "game_zone": "Demo Mixed Street",
+      "module": "rowhouse",
+      "lot": [
+        2,
+        3
+      ],
+      "level": 1,
+      "access": "Front",
+      "households": 4,
+      "party_walls": [
+        "left",
+        "right"
+      ],
+      "party_skip": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "budget": [
+        45000,
+        9000,
+        1000
+      ],
+      "density_floor": 8.0,
+      "crown_allowed": false,
+      "crown_max_m2": 150.0,
+      "max_front_setback_m": 1.2,
+      "min_coverage_pct": 70.0,
+      "allow_right_corner": false,
+      "space_multiplier": 0,
+      "product": "",
+      "colour_sets": [
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.3068,
+            0.3864,
+            0.3372
+          ]
+        ],
+        [
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            0.2273,
+            0.3068,
+            0.407
+          ]
+        ]
+      ],
+      "colour_random": [
+        2,
+        4,
+        5
+      ],
+      "params": {
+        "mode": "mixed",
+        "storeys": 3,
+        "wall": "BuffBrick",
+        "roof_mat": "SlateDark",
+        "door": "Green",
+        "sign": "Sign_HarbourBakery"
+      },
+      "display_name": "Harbour Bakery Block",
+      "description": "Ground-floor timber shopfront with painted fascia sign and flats above.",
+      "render_thumbnail": false,
+      "service": null
+    },
+    "NA_DMTownHall": {
+      "name": "NA_DMTownHall",
+      "design": "TownHall",
+      "zone_key": "ZS1",
+      "zone_kind": "service",
+      "game_zone": "",
+      "module": "corner_civic",
+      "lot": [
+        3,
+        3
+      ],
+      "level": 1,
+      "access": "Front",
+      "households": 0,
+      "party_walls": [],
+      "party_skip": [],
+      "budget": [
+        45000,
+        9000,
+        1000
+      ],
+      "density_floor": 8.0,
+      "crown_allowed": false,
+      "crown_max_m2": 150.0,
+      "max_front_setback_m": 1.2,
+      "min_coverage_pct": 65.0,
+      "allow_right_corner": false,
+      "space_multiplier": 0,
+      "product": "",
+      "colour_sets": [
+        [
+          [
+            0.8315,
+            0.7978,
+            0.7558
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            0.6292,
+            0.6854,
+            0.7558
+          ],
+          [
+            0.95,
+            0.95,
+            0.93
+          ],
+          [
+            1.0,
+            1.0,
+            1.0
+          ]
+        ]
+      ],
+      "colour_random": [
+        2,
+        4,
+        5
+      ],
+      "params": {
+        "wall": "BoardBatten",
+        "roof_mat": "TinGreen",
+        "door": "Oxblood"
+      },
+      "display_name": "Demo Town Hall",
+      "description": "Stone-and-batten municipal hall with arched lobby and copper-roofed cupola.",
+      "render_thumbnail": true,
+      "service": {
+        "kind": "landmark",
+        "values": {
+          "Attraction": {
+            "m_Attractiveness": 40
+          }
+        },
+        "drop": [],
+        "unlock": "",
+        "vehicle_points_lot_m": [],
+        "pedestrian_point_lot_m": [
+          12.0,
+          1.0
+        ],
+        "thumbnail": true
+      }
+    }
+  }
+}

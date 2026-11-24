@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>WaterfrontAuto</AssemblyName>
+    <RootNamespace>WaterfrontAuto</RootNamespace>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <DebugType>portable</DebugType>
+    <DeployDir>$(USERPROFILE)\AppData\LocalLow\Colossal Order\Cities Skylines II\Mods\WaterfrontAuto</DeployDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Core\**\*.cs;Game\**\*.cs" Exclude="**\*.pre_v4.cs" />
+    <Reference Include="$(GameManaged)\Game.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.Core.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.Logging.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.Mathematics.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.Collections.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.IO.AssetDatabase.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Unity.Entities.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Unity.Collections.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Unity.Mathematics.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Unity.Burst.dll" Private="false" />
+    <Reference Include="$(GameManaged)\UnityEngine.CoreModule.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Unity.InputSystem.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.Localization.dll" Private="false" />
+    <Reference Include="$(GameManaged)\Colossal.UI.Binding.dll" Private="false" />
+  </ItemGroup>
+  <Target Name="Deploy" AfterTargets="Build" Condition="'$(DeployOnBuild)' != 'false'">
+    <MakeDir Directories="$(DeployDir);$(DeployDir)\images" />
+    <Copy SourceFiles="$(TargetPath);$(TargetDir)$(TargetName).pdb;UI\WaterfrontAuto.mjs;UI\WaterfrontAuto.css" DestinationFolder="$(DeployDir)" />
+    <ItemGroup>
+      <ModIcons Include="UI\images\*.svg" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModIcons)" DestinationFolder="$(DeployDir)\images" />
+  </Target>
+</Project>

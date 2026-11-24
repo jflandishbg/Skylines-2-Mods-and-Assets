@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <GameDir Condition="'$(GameDir)' == '' and '$(CS2_GAME_DIR)' != ''">$(CS2_GAME_DIR)</GameDir>
+    <GameDir Condition="'$(GameDir)' == ''">C:\SteamLibrary\steamapps\common\Cities Skylines II</GameDir>
+    <GameManaged>$(GameDir)\Cities2_Data\Managed</GameManaged>
+  </PropertyGroup>
+</Project>

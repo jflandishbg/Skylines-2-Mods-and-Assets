@@ -1,0 +1,88 @@
+{
+  "pack_id": "crescent_metropolis",
+  "title": "Crescent Metropolis",
+  "prefix": "NA_CM",
+  "variation_group": "Crescent",
+  "textures_roots": [
+    "../../../Lobstertown/textures"
+  ],
+  "palette": {
+    "sets": {
+      "shotgun": [
+        [[1.0, 1.0, 1.0], [0.95, 0.94, 0.90], [0.98, 0.97, 0.94]],
+        [[1.0, 1.0, 1.0], [0.78, 0.85, 0.80], [0.96, 0.95, 0.92]],
+        [[1.0, 1.0, 1.0], [0.92, 0.84, 0.72], [0.96, 0.95, 0.92]],
+        [[1.0, 1.0, 1.0], [0.78, 0.84, 0.88], [0.98, 0.97, 0.94]]
+      ],
+      "stucco": [
+        [[1.0, 1.0, 1.0], [1.0, 1.0, 1.0], [0.98, 0.97, 0.94]],
+        [[1.0, 1.0, 1.0], [1.0, 1.0, 1.0], [0.94, 0.92, 0.88]]
+      ]
+    },
+    "random": [2, 4, 5]
+  },
+  "zones": {
+    "ZL1": {
+      "game_name": "Crescent Shotgun Rows",
+      "kind": "residential",
+      "base_zone": "Residential Low",
+      "module": "shotgun",
+      "party_mode": "row",
+      "budget": [45000, 9000, 1000],
+      "default_lots": [[1, 4]],
+      "households_by_lot": {"1x4": 2}
+    },
+    "ZM1": {
+      "game_name": "Crescent Royal Galleries",
+      "kind": "mixed",
+      "base_zone": "Mixed Housing",
+      "module": "royal_gallery",
+      "party_mode": "row",
+      "budget": [45000, 9000, 1000],
+      "default_lots": [[2, 3]],
+      "households_by_lot": {"2x3": 6}
+    },
+    "ZH1": {
+      "game_name": "Crescent Grand Towers",
+      "kind": "residential",
+      "base_zone": "Residential High",
+      "module": "st_charles_tower",
+      "party_mode": "none",
+      "budget": [160000, 24000, 3000],
+      "crown_allowed": true,
+      "crown_max_m2": 150.0,
+      "default_lots": [[4, 5]],
+      "households_by_lot": {"4x5": 48}
+    }
+  },
+  "roster": [
+    {
+      "design": "CamelbackShotgun",
+      "zone_key": "ZL1",
+      "display_name": "Creole Camelback Shotgun",
+      "description": "1x4 clapboard shotgun cottage with cast-iron porch, Charleston green shutters, and 2-storey sage camelback wing.",
+      "lots": [[1, 4]],
+      "palette_key": "shotgun",
+      "params": {}
+    },
+    {
+      "design": "RoyalStreetGalleryLeftCorner",
+      "zone_key": "ZM1",
+      "display_name": "Royal Street Corner Gallery",
+      "description": "3-storey French Quarter corner block with arched shop portals, double-tiered cast-iron lace galleries, and slate hip roof.",
+      "lots": [[2, 3]],
+      "access": "LeftCorner",
+      "palette_key": "stucco",
+      "params": {}
+    },
+    {
+      "design": "StCharlesExchange",
+      "zone_key": "ZH1",
+      "display_name": "St. Charles Grand Tower",
+      "description": "12-storey Creole Beaux-Arts tower with limestone arcade, stacked cast-iron loggia balconies, courtyard wings, and twin copper belvederes.",
+      "lots": [[4, 5]],
+      "palette_key": "stucco",
+      "params": {}
+    }
+  ]
+}
